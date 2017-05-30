@@ -10,11 +10,11 @@ COPY . /usr/spacy/
 RUN apt-get update
 RUN apt-get install -y build-essential python-dev git
 
-RUN pip3 install --upgrade pip setuptools
+RUN pip install --upgrade pip setuptools
 
-RUN pip3 install -U spacy
-RUN python3 -m spacy download ${LANG}
+RUN pip install -U spacy
+RUN python -m spacy download ${LANG}
 
 WORKDIR /usr/spacy
 
-CMD ["python3"]
+CMD ["python"]
