@@ -1,6 +1,6 @@
 FROM python:3.5-slim
 
-MAINTAINER Gilles Ameri <ameri.gilles@gmail.com>
+MAINTAINER Gilles Ameri
 
 ENV LANG             fr
 
